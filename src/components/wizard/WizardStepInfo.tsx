@@ -9,6 +9,7 @@ function WizardStepInfo() {
   const [error, setError] = useState("");
 
   const {
+    step,
     setStep,
     formData: storeFormData,
     setFormData: updateStoreFormData,
@@ -39,9 +40,9 @@ function WizardStepInfo() {
     console.log(storeFormData, "storeFormData");
 
     // Move to next step
-    setStep(2);
+    setStep(step + 1);
 
-    console.log("Form validated successfully, moved to step 2");
+    console.log("Form validated successfully, moved to step", step + 1);
     return true;
   };
 
