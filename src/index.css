@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Light theme variables */
+  --color-text: #213547;
+  --color-background: #ffffff;
+  --color-surface: #f9f9f9;
+  --color-border: #e5e7eb;
+  --color-primary: #51CAC5;
+  --color-primary-hover: #174B72;
+  --color-secondary: #698BC0;
+  --color-tertiary: #174B72;
+  --color-accent: #51CAC5;
+  
+  /* Slider variables */
+  --slider-track-height: 4px;
+  --slider-thumb-size: 12px;
+  --slider-border-radius: 2px;
+  --slider-thumb-border-radius: 50%;
+  --slider-transition-duration: 0.2s;
+  --slider-track-bg: #e5e7eb;
+  --slider-thumb-bg: #51CAC5;
+  --slider-thumb-hover: #174B72;
+}
+
+.dark {
+  /* Dark theme variables */
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-background: #242424;
+  --color-surface: #1a1a1a;
+  --color-border: #374151;
+  --color-primary: #51CAC5;
+  --color-primary-hover: #698BC0;
+  --color-secondary: #698BC0;
+  --color-tertiary: #174B72;
+  --color-accent: #51CAC5;
+  
+  /* Dark slider variables */
+  --slider-track-bg: #374151;
+  --slider-thumb-bg: #51CAC5;
+  --slider-thumb-hover: #698BC0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-tertiary);
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--color-text);
+}
