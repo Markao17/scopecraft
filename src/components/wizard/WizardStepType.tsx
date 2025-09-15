@@ -1,4 +1,4 @@
-import { useWizardStore } from "../../store/wizard-store";
+import { useWizardStore } from "../../store/wizard-store.ts";
 import { useEffect, useState } from "react";
 function WizardStepType() {
   const [error, setError] = useState("");
